@@ -19,10 +19,13 @@ class PageLinks {
 
   // Define what is your absolute pathes: http://..../somethinggeneric - probably you don't have (only one instance)
   collectAbsoluteLinks() {
+    let pages = [];
     const absoluteLinks = this.pageElements("a[href^='http']");
-    return absoluteLinks.map(() => {
-      return this.pageElements(absoluteLinks).attr('href');
-    });
+    console.log('Found ' + relativeLinks.length + ' absolute links on page');
+    for (let index = 0; index < relativeLinks.length; index++) {
+      pages.push(`${this.pageElements(absoluteLinks[index]).attr('href')}`);
+    }
+    return pages;
   }
 }
 
