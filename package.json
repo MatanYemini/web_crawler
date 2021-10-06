@@ -19,7 +19,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
-    "url-parse": "^1.4.7",
+    "url-parse": "^1.5.2",
     "url-parser": "0.0.1"
   }
 }
